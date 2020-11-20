@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+}
+body {
+    min-width: 100%;
+    background-image: linear-gradient(to bottom, white, rgba(139, 154, 194, 0.631));
+}
+
+@media  screen and (min-width: 1100px) and (max-width: 1920px){
+    .btn-first {
+        margin-left: 250px;
+        height: 50px;
+        box-shadow: 0px 10px 14px -7px #276873;
+        background:linear-gradient(to bottom,  #0a2552 5%,  #1d3866 100%);
+        background-color:#599bb3;
+        border-radius:8px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:13px 32px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #3d768a;
+    }
+    .btn-first:hover {
+        /* background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%); */
+        background-color:#408c99;
+    }
+    .btn-first:active {
+        position:relative;
+        top:1px;
+    }
+
+    .bar-chart {
+        padding-left: 250px;
+        max-width: 700px;
+    }
+
+    .my-table{
+        height: 10px;
+        width: 800px;
+        max-width: 800px;
+        margin-top: 20px;
+        padding-left: 250px;
+        overflow-y: scroll;
+            
+    }
+
+
+
+    .my-table table, th, td{
+        border-collapse: collapse;
+        margin: 25px 0;
+        border: 1px solid black;
+    }
+
+    .my-table td, th {
+        padding: 10px;
+    }
+
+    .my-table th {
+        background-color: rgb(75, 114, 240);
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 18px;
+        color: white;
+        /* width: 600px; */
+    }
+
+    .my-table tr:nth-child(odd){
+        background-color: rgb(238, 255, 255);
+    }
+
+    .my-table tr:nth-child(even){
+        background-color: white;
+    }
+
+    .center-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bodymember {
+        
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+
+    .entry
+    {
+        width: 200px;
+        height: 50px;
+        border: 0;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: rgb(50, 50, 150);
+        color: white;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px){
+	.my-table {
+        height: 200px;
+        width: 800px;
+        margin-left: 50px;
+        max-width: 600px;
+
+    }
+    .my-table th {
+        font-size: 12px;
+    }
+}

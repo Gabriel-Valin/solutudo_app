@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial;
+    height: 100%;
+    
+}
+
+.dropdown li:nth-child(4){
+    background-image: url('../icons/money.png');
+    
+}
+
+.dropdown li:nth-child(3){
+    background-image: url('../icons/community.png');
+    
+    
+}
+.dropdown li:nth-child(2){
+    background-image: url('../icons/hand.png');
+    
+}
+.dropdown li:nth-child(1){
+    background-image: url('../icons/control-panel.png');
+    
+}
+
+.logo-side{
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.bodymember {
+    padding-left: 250px;
+}
+
+.left-menu {
+    width: 250px;
+    /* background-color: #0a2552; */
+    background-image: linear-gradient(to bottom,#0a2552, rgba(139, 154, 194, 0.631));
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.container {
+    padding-left: 250px;
+
+}
+
+.top {
+    height: 50px;
+    background-color: #1d3866;
+    background-image: linear-gradient(to right,#0a2552, rgba(139, 154, 194, 0.631));
+    color: white;
+    font-size: 15px;
+}
+
+.top-right {
+    float: right;
+    height: 40px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.top-right a {
+    text-decoration: none;
+}
+
+#welcome {
+    padding-right: calc(45% - 5%);
+    font-size: 25px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#logout {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.menu-area {
+    color: white;
+    
+}
+
+.menu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-area li{
+    height: 40px;
+    line-height: 45px;
+    border-bottom: 1px solid #999;
+    font-size: 15px;
+    padding-left: 50px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+.menu-area li:hover {
+    background-color: rgb(194, 194, 194);
+}
+.menu-area li a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
+}
+
+.myli {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 22px;
+}
+
+
+#logout {
+    color: white;
+    font-size: 15px;
+}
+
+/* Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown {
+    width: 250px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(92, 221, 250);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.select {
+    display: inline;
+}
