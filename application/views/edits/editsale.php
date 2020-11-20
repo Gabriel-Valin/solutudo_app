@@ -11,27 +11,27 @@ $this->load->view('mytemplates/sidebar'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php base_url() ?>assets/css/newsale.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Inria+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <title>Editar venda - Solutudo</title>
 </head>
 
 <body>
-
+    <h1 class="bodymember">Informações sobre a venda</h1>
     <div class="center-all">
-        <h1>Informações sobre a venda</h1>
         <form action="<?php base_url() ?>editsale/updateinfosale/<?= $sale_info[0]['id'] ?>" method="POST">
             <?php date_default_timezone_set('America/Sao_Paulo') ?>
             <input type="hidden" name="dh" id="" value="<?php echo date('d/m/Y \à\s H:i:s') ?>">
 
 
-            <label for="">Empresa</label></br></br>
+            <label class="label1" for="">Empresa</label></br></br>
             <input class="input-type" type="text" name="company" value="<?php echo $sale_info[0]['empresa'] ?>""></br></br>
 
-            <label for="">Vendedor</label></br></br>
+            <label class=" label1" for="">Vendedor</label></br></br>
             <input class=" input-type" type="text" name="seller" value="<?php echo $sale_info[0]['vendedor'] ?>"></br></br>
 
-            <label for="">Plano</label></br></br>
+            <label class="label1" for="">Plano</label></br></br>
             <select name="plan" class="input-type">
                 <option value=""><?php echo $sale_info[0]['plano'] ?></option>
                 <option value="Plano Bronze">Plano Bronze</option>
@@ -40,7 +40,7 @@ $this->load->view('mytemplates/sidebar'); ?>
             </select></br></br>
 
 
-            <label for="">Valor</label></br></br>
+            <label class="label1" for="">Valor</label></br></br>
             <select name="value" class="input-type">
                 <option value=""><?php echo $sale_info[0]['valor'] ?></option>
                 <option value="450">R$ 450,00</option>
@@ -48,7 +48,7 @@ $this->load->view('mytemplates/sidebar'); ?>
                 <option value="900">R$ 900,00</option>
             </select></br></br>
 
-            <label for="">Status</label></br></br>
+            <label class="label1" for="">Status</label></br></br>
             <select name="status" class="input-type">
                 <option value=""><?php echo $sale_info[0]['status'] ?></option>
                 <option value="Negado">Negado</option>

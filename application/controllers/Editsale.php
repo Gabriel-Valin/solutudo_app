@@ -10,7 +10,9 @@ class Editsale extends CI_Controller
         $id = $_GET['sale'];
         $data['session_name'] = $_SESSION['logged_user']['nome'];
         $this->load->model('sales_model');
+        $this->load->model('plans_model');
         $data['sale_info'] = $this->sales_model->getInfoSale($id);
+        $data['plans'] = $this->plans_model->getOnlyPlans();
         $this->load->view('edits/editsale', $data);
     }
 
