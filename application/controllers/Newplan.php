@@ -7,6 +7,7 @@ class Newplan extends CI_Controller
     public function index()
     {
         checkUserLogged();
+        checkisNotManager(); //** CHECANDO SE O USUÁRIO É GERENTE, APENAS O GERENTE PODE INSERIR UM NOVO PLANO */
         $data['session_name'] = $_SESSION['logged_user']['nome'];
         $this->load->view('news/newplan', $data);
     }

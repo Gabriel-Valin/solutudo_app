@@ -27,7 +27,7 @@ $this->load->view('mytemplates/sidebar'); ?>
             <input class="form-member" type="text" name="name" value="<?php echo $company_info[0]['nome'] ?>"></br></br>
 
             <label for="" class="label1">Contato</label></br></br>
-            <input class="form-member" type="text" name="tel" onkeypress="$(this).mask('(00) 0000-00009')" value="<?php echo $company_info[0]['telefone'] ?>"></br></br>
+            <input class="form-member" type="text" name="tel" onkeypress="$(this).mask('(00) 0000-0000')" value="<?php echo $company_info[0]['telefone'] ?>"></br></br>
 
             <label for="" class="label1">Endereço</label></br></br>
             <input class="form-member" type="text" name="address" value="<?php echo $company_info[0]['endereco'] ?>"></br></br>

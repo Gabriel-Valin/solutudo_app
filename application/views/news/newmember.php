@@ -28,7 +28,7 @@ $this->load->view('mytemplates/sidebar'); ?>
             <input class="form-member" type="text" name="name"></br></br>
 
             <label for="" class="label1">Celular</label></br></br>
-            <input class="form-member" type="text" name="cel" onkeypress="$(this).mask('(00) 0000-0000')"></br></br>
+            <input class="form-member" type="text" name="cel" onkeypress="$(this).mask('(00) 00000-0000')"></br></br>
 
             <label for="" class="label1">Endereço</label></br></br>
             <input class="form-member" type="text" name="address"></br></br>
