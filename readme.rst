@@ -1,70 +1,40 @@
-###################
-What is CodeIgniter
-###################
+######################
+Gabriel da Costa Valin
+######################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+###################################################
+Mini Aplicação para o processo seletivo da Solutudo
+###################################################
+**Problema:** Atualmente a empresa Solutudo possui uma equipe de vendas composta por vendedores e um gerente que diariamente realizam ligações para empresas com o objetivo de venderem planos comerciais. Hoje todo controle é feito em Excel e não há muito controle e organização sobre o progresso das vendas.
 
-*******************
-Release Information
-*******************
+###################################################
+DESCRIÇÃO SOBRE  A DECISÃO PARA ESTRUTURA DO SOTFWARE:
+###################################################
+Levando em consideração que o uso de excel é muito bem aproveitado nas empresas atualmente, resolvi construir a aplicação mais semelhante possível com as funcionalidades do excel, layout simples e bem auto-explicativo/interativo com os usuários.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+###################################################
+TECNOLOGAIS USADAS:
+###################################################
+PHP, Code Igniter (MVC), PHPMailer, JavaScript, jQuery, HTML, CSS, Chart.JS, Password Hash (BCRYPT), MySQL e serviço de SMTP do Gmail com TLS para evitar que caia no SPAM.
 
-**************************
-Changelog and New Features
-**************************
+###################################################
+ALGUMAS FUNCIONALIDADES EXPLICADAS:
+###################################################
+**Os controllers:**
+•	Newcompany
+•	Editcompany
+•	Newmember
+•	Editmember
+•	Newplan
+•	EditPlan
+•	Changepass
+Dentro de cada um deles há uma funcionalidade de envio de email com uma mensagem relacionada a função do controller.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+###################################################
+CSS EXTERNO (PARA FONTES):
+###################################################
+left menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
+top menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
+body: https://fonts.google.com/specimen/Josefin+Sans?selection.family=Baloo+Bhai+2:wght@600|Inria+Sans|Josefin+Sans&sidebar.open=true
 
-*******************
-Server Requirements
-*******************
 
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
