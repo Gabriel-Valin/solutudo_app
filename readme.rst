@@ -31,6 +31,12 @@ ALGUMAS FUNCIONALIDADES EXPLICADAS:
 Dentro de cada um deles há uma funcionalidade de envio de email com uma mensagem relacionada a função do controller.
 
 ###################################################
+UTLIZAÇÃO DA VARIÁVEL $mc dentro da estrutura FOREACH:
+###################################################
+
+MC significa Many Children, que resulta nos "Filhos" do Array PAI que se encontra no FOREACH.
+
+###################################################
 CSS EXTERNO (PARA FONTES):
 ###################################################
 left menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
