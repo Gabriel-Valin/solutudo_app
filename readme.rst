@@ -49,8 +49,8 @@ MC significa Many Children, que resulta nos "Filhos" do Array PAI que se encontr
 ###################################################
 CSS EXTERNO (PARA FONTES):
 ###################################################
-left menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
-top menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
-body: https://fonts.google.com/specimen/Josefin+Sans?selection.family=Baloo+Bhai+2:wght@600|Inria+Sans|Josefin+Sans&sidebar.open=true
+* left menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
+* top menu: https://fonts.google.com/specimen/Hammersmith+One?sidebar.open=true&selection.family=Hammersmith+One
+* body: https://fonts.google.com/specimen/Josefin+Sans?selection.family=Baloo+Bhai+2:wght@600|Inria+Sans|Josefin+Sans&sidebar.open=true
 
 
