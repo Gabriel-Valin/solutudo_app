@@ -30,13 +30,13 @@ TECNOLOGAIS USADAS:
 ALGUMAS FUNCIONALIDADES EXPLICADAS:
 ###################################################
 **Os controllers:**
-*•	Newcompany
-*•	Editcompany
-*•	Newmember
-*•	Editmember
-*•	Newplan
-*•	EditPlan
-*•	Changepass
+* Newcompany
+* Editcompany
+*	Newmember
+*	Editmember
+*	Newplan
+*	EditPlan
+*	Changepass
 Dentro de cada um deles há uma funcionalidade de envio de email com uma mensagem relacionada a função do controller.
 
 ###################################################
