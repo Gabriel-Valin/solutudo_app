@@ -15,19 +15,29 @@ Levando em consideração que o uso de excel é muito bem aproveitado nas empres
 ###################################################
 TECNOLOGAIS USADAS:
 ###################################################
-PHP, Code Igniter (MVC), PHPMailer, JavaScript, jQuery, HTML, CSS, Chart.JS, Password Hash (BCRYPT), MySQL e serviço de SMTP do Gmail com TLS para evitar que caia no SPAM.
+* PHP, Code Igniter (MVC), 
+* PHPMailer, 
+* JavaScript, 
+* jQuery, 
+* HTML, 
+* CSS, 
+* Chart.JS, 
+* Password Hash (BCRYPT), 
+* MySQL 
+* e serviço de SMTP do Gmail com TLS para evitar que caia no SPAM.
 
 ###################################################
 ALGUMAS FUNCIONALIDADES EXPLICADAS:
 ###################################################
 **Os controllers:**
-•	Newcompany
-•	Editcompany
-•	Newmember
-•	Editmember
-•	Newplan
-•	EditPlan
-•	Changepass
+
+* Newcompany
+- Editcompany
+-	Newmember
+-	Editmember
+-	Newplan
+-	EditPlan
+-	Changepass
 Dentro de cada um deles há uma funcionalidade de envio de email com uma mensagem relacionada a função do controller.
 
 ###################################################
