@@ -1,13 +1,12 @@
+<img src="https://imgur.com/a/6sLycHk"/>
+
+
 ######################
 Gabriel da Costa Valin
 ######################
 
-#####################
-Visualização inicial
-#####################
-<img src="https://imgur.com/a/6sLycHk"/>
-###################################################
 
+###################################################
 Mini Aplicação para o processo seletivo da Solutudo
 ###################################################
 **Problema:** Atualmente a empresa Solutudo possui uma equipe de vendas composta por vendedores e um gerente que diariamente realizam ligações para empresas com o objetivo de venderem planos comerciais. Hoje todo controle é feito em Excel e não há muito controle e organização sobre o progresso das vendas.
