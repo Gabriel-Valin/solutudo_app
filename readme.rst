@@ -1,5 +1,3 @@
-<img src="https://imgur.com/a/6sLycHk"/>
-
 
 ######################
 Gabriel da Costa Valin
