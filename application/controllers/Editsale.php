@@ -28,12 +28,9 @@ class Editsale extends CI_Controller
             'plano' => $_POST['plan'],
             'valor' => $_POST['value'],
             'status' => $_POST['status'],
-            'empresa' => $_POST['company'],
-
         );
 
         if (isset($_POST['company']) && !empty($_POST['company']) && isset($_POST['seller']) && !empty($_POST['seller']) && isset($_POST['plan']) && !empty($_POST['plan']) && isset($_POST['value']) && !empty($_POST['value'])) {
-
             $this->sales_model->updateInfoSale($id, $sale);
             $this->session->set_flashdata('success_sale', 'Sale registered.');
             redirect('sales');

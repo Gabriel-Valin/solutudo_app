@@ -27,46 +27,41 @@ class Newplan extends CI_Controller
             $this->load->model('members_model');
 
             $emailmembers = $this->members_model->getMembersTotal();
-            foreach ($emailmembers as $emails) {
+            $this->load->library('phpmailer_lib');
+            $mail = $this->phpmailer_lib->load();
+            $mail->isSMTP();
+            $mail->Host     = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'processosolutudo@gmail.com';
+            $mail->Password = 'gabrielvalin';
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port     = 465;
+            $mail->setFrom('processosolutudo@gmail.com', 'Gabriel Valin');
+            $mail->Subject = 'NOVO PLANO PARA VENDAS CRIADO NA EMPRESA!';
+            $mail->isHTML(true);
 
 
-                $this->load->library('phpmailer_lib');
+            /* ESCREVENDO O CONTEÚDO HTML A SER ENVIADO */
 
-
-                $mail = $this->phpmailer_lib->load();
-                $mail->isSMTP();
-                $mail->Host     = 'smtp.gmail.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'processosolutudo@gmail.com';
-                $mail->Password = 'gabrielvalin';
-                $mail->SMTPSecure = 'ssl';
-                $mail->Port     = 465;
-                $mail->setFrom('processosolutudo@gmail.com', 'Gabriel Valin');
-                $mail->addAddress($emails['email']);
-                $mail->Subject = 'NOVO PLANO PARA VENDAS CRIADO NA EMPRESA!';
-                $mail->isHTML(true);
-
-                /* ESCREVENDO O CONTEÚDO HTML A SER ENVIADO */
-
-                $mailContent = '<h1 style="text-align: center;">NOVO PLANO CRIADO PARA VENDAS!</h1>
+            $mailContent = '<h1 style="text-align: center;">NOVO PLANO CRIADO PARA VENDAS!</h1>
                     <h3 style="text-align: center;">Confira o novo plano para venda que temos agora em nossa empresa.</h3>
                     <h1 style="text-align: center;">Obrigado!!!</h1>
                     <a href="localhost/solutudo/plans">
                         <h3 style="text-align: center;">IR PARA PLANOS</h3>
                     </a>';
-                $mail->Body = $mailContent;
-
-                // Send email
-                if (!$mail->send()) {
-                    echo 'Mensagem não enviada';
-                    echo 'Error: ' . $mail->ErrorInfo;
-                } else {
-                    echo 'Mensagem enviada';
-                }
+            $mail->Body = $mailContent;
+            foreach ($emailmembers as $emails) {
+                $mail->addAddress($emails['email']);
             }
 
+            // Send email
 
-
+            if (!$mail->send()) {
+                echo 'Mensagem não enviada';
+                echo 'Error: ' . $mail->ErrorInfo;
+            } else {
+                echo 'Mensagem enviada';
+            }
 
             $this->session->set_flashdata('success_plan', 'Plano criado.');
             redirect('plans');

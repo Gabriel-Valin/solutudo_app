@@ -29,44 +29,39 @@ class Editplan extends CI_Controller
             $this->load->model('members_model');
 
             $emailmembers = $this->members_model->getMembersTotal();
-            foreach ($emailmembers as $emails) {
+            $this->load->library('phpmailer_lib');
 
 
-                $this->load->library('phpmailer_lib');
+            $mail = $this->phpmailer_lib->load();
+            $mail->isSMTP();
+            $mail->Host     = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'processosolutudo@gmail.com';
+            $mail->Password = 'gabrielvalin';
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port     = 465;
+            $mail->setFrom('processosolutudo@gmail.com', 'Gabriel Valin');
+            $mail->Subject = 'O PLANO ' . $_POST['plan'] . ' foi alterado, confira.';
+            $mail->isHTML(true);
 
+            /* ESCREVENDO O CONTEÚDO HTML A SER ENVIADO */
 
-                $mail = $this->phpmailer_lib->load();
-                $mail->isSMTP();
-                $mail->Host     = 'smtp.gmail.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'processosolutudo@gmail.com';
-                $mail->Password = 'gabrielvalin';
-                $mail->SMTPSecure = 'ssl';
-                $mail->Port     = 465;
-                $mail->setFrom('processosolutudo@gmail.com', 'Gabriel Valin');
-                $mail->addAddress($emails['email']);
-                $mail->Subject = 'O PLANO ' . $_POST['plan'] . ' foi alterado, confira.';
-                $mail->isHTML(true);
-
-                /* ESCREVENDO O CONTEÚDO HTML A SER ENVIADO */
-
-                $mailContent = '<h1 style="text-align: center;">O ' . $_POST['plan'] . ' teve seu valor alterado!</h1>
+            $mailContent = '<h1 style="text-align: center;">O ' . $_POST['plan'] . ' teve seu valor alterado!</h1>
                     <h3 style="text-align: center;">Confira essa nova mudança.</h3>
                     <h1 style="text-align: center;">Obrigado!!!</h1>
                     <a href="localhost/solutudo/plans">
                         <h3 style="text-align: center;">IR PARA PLANOS</h3>
                     </a>';
-                $mail->Body = $mailContent;
-
-                // Send email
-                if (!$mail->send()) {
-                    echo 'Mensagem não enviada';
-                    echo 'Error: ' . $mail->ErrorInfo;
-                } else {
-                    echo 'Mensagem enviada';
-                }
+            $mail->Body = $mailContent;
+            foreach ($emailmembers as $emails) {
+                $mail->addAddress($emails['email']);
             }
-
+            if (!$mail->send()) {
+                echo 'Mensagem não enviada';
+                echo 'Error: ' . $mail->ErrorInfo;
+            } else {
+                echo 'Mensagem enviada';
+            }
 
 
 

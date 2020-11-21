@@ -31,6 +31,7 @@ $this->load->view('mytemplates/sidebar'); ?>
             <label class=" label1" for="">Vendedor</label></br></br>
             <input class=" input-type" type="text" name="seller" value="<?php echo $sale_info[0]['vendedor'] ?>"></br></br>
 
+
             <label class="label1" for="">Plano</label></br></br>
             <select name="plan" class="input-type">
                 <option value=""><?php echo $sale_info[0]['plano'] ?></option>
