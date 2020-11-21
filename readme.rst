@@ -30,7 +30,8 @@ TECNOLOGAIS USADAS:
 ALGUMAS FUNCIONALIDADES EXPLICADAS:
 ###################################################
 **Os controllers:**
-- Newcompany
+
+* Newcompany
 - Editcompany
 -	Newmember
 -	Editmember
