@@ -2,7 +2,12 @@
 Gabriel da Costa Valin
 ######################
 
+#####################
+Visualização inicial
+#####################
+![alt text](https://landmass.com.br/gabriel/dashboard.PNG)
 ###################################################
+
 Mini Aplicação para o processo seletivo da Solutudo
 ###################################################
 **Problema:** Atualmente a empresa Solutudo possui uma equipe de vendas composta por vendedores e um gerente que diariamente realizam ligações para empresas com o objetivo de venderem planos comerciais. Hoje todo controle é feito em Excel e não há muito controle e organização sobre o progresso das vendas.
