@@ -29,9 +29,11 @@ class Changepass extends CI_Controller
                 );
 
                 $this->users_model->updatepass($email, $updatedpass);
-                $this->load->library('phpmailer_lib');
 
-                // PHPMailer object
+                /* CONFIGURAÇÃO DO SERVIÇO DE EMAIL E HTML A SER ENVIADO*/
+
+
+                $this->load->library('phpmailer_lib');
                 $mail = $this->phpmailer_lib->load();
 
                 // SMTP configuration
@@ -42,16 +44,9 @@ class Changepass extends CI_Controller
                 $mail->Password = 'gabrielvalin';
                 $mail->SMTPSecure = 'ssl';
                 $mail->Port     = 465;
-
                 $mail->setFrom('processosolutudo@gmail.com', 'Gabriel Valin');
-
-                // Add a recipient
                 $mail->addAddress($_POST['email']);
-
-
-                // Email subject
                 $mail->Subject = 'SENHA ALTERADA COM SUCESSO!';
-
                 $mail->isHTML(true);
 
                 $mailContent = '<h1 style="text-align: center;">Você alterou sua senha!</h1>
