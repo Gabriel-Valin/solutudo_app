@@ -5,7 +5,7 @@ Gabriel da Costa Valin
 #####################
 Visualização inicial
 #####################
-<img src="https://landmass.com.br/gabriel/dashboard.PNG"/>
+<img src="https://imgur.com/a/6sLycHk"/>
 ###################################################
 
 Mini Aplicação para o processo seletivo da Solutudo
