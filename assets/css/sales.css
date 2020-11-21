@@ -38,7 +38,7 @@ body {
 }
 
 .my-table{
-    height: 350px;
+    height: 450px;
     max-width: 70%;
     padding-left: 250px;
     overflow-y: scroll;
@@ -87,9 +87,14 @@ body {
 }
 
 
-@media screen and (min-width: 700px){
+ @media screen and (max-width: 1400px){
+	.my-table {
+        height: 250px;
+        width: 800px;
+       
 
-    .my-table {
-        height: 240px;
     }
-}
+    .my-table th {
+        font-size: 12px;
+    }
+} 

@@ -43,7 +43,7 @@ $this->load->view('mytemplates/sidebar'); ?>
 
             <label for="" class="label1">Nível de acesso</label></br></br>
             <select name="level" class="form-member">
-                <option value="">Selecione o nível de acesso</option>
+                <option value="<?= $member[0]['nivel_acesso'] ?>"><?= $member[0]['nivel_acesso'] ?></option>
                 <option value="Gerente">Gerente</option>
                 <option value="Vendedor">Vendedor</option>
 

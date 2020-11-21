@@ -54,9 +54,13 @@ body {
     font-family: 'Baloo Bhai 2', cursive;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (max-width: 1400px){
+	.my-table {
+        height: 500px;
+        width: 800px;       
 
-    .my-table {
-        height: 450px;
     }
-}
+    .my-table th {
+        font-size: 12px;
+    }
+} 

@@ -67,6 +67,10 @@ $this->load->view('mytemplates/sidebar'); ?>
 
         <h1 class="bodymember">GRÁFICO DE BARRAS - Empresas por estado</h1>
 
+
+
+        <!-- GRÁFICO CHART.JS, COMO É APENAS UM, FOI CRIADO NO MESMO ARQUIVO -->
+
         <canvas class="bar-chart" id="line-chart" width="400px" height="100px"></canvas>
         <script>
             var ctx = document.getElementById('line-chart');
@@ -128,7 +132,6 @@ $this->load->view('mytemplates/sidebar'); ?>
             });
         </script>
     </div>
-
 
 </body>
 
