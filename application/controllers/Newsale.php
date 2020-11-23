@@ -31,6 +31,36 @@ class Newsale extends CI_Controller
                 'data_venda' => $_POST['date_sale']
             );
             $this->sales_model->insertsale($sale);
+
+            $this->load->view('pdf-views/newsale');
+
+            // Get output html
+            $html = $this->output->get_output();
+
+            // Load pdf library
+            $this->load->library('pdf');
+
+            // Load HTML content
+            $this->dompdf->loadHtml($html);
+
+            // (Optional) Setup the paper size and orientation
+            $this->dompdf->setPaper('A4', 'landscape');
+
+            // Render the HTML as PDF
+            $this->dompdf->render();
+
+            // Output the generated PDF (1 = download and 0 = preview)
+            $this->dompdf->stream("welcome.pdf", array("Attachment" => 0));
+
+
+
+
+
+
+
+
+
+
             $this->session->set_flashdata('success_sale', 'Venda registrada.');
             redirect('newsale');
         } else {

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Nov-2020 às 02:51
+-- Tempo de geração: 23-Nov-2020 às 17:36
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.10
 
@@ -74,7 +74,7 @@ CREATE TABLE `membros` (
 --
 
 INSERT INTO `membros` (`id`, `nome`, `celular`, `endereco`, `email`, `senha`, `data_admissao`, `foto_membro`, `nivel_acesso`) VALUES
-(32, 'Bruno Montanha', '(14) 9982-8889', 'Vila Maria, 208', 'desenvolvimento@solutudo.com', '$2y$10$P8XdgyeZUZtL6eSmIgfrm.G0Bq/qlrmQ0QhfLGTGrGhTU4SK060TG', '19/11/2019', '', 'Gerente'),
+(32, 'Bruno Montanha', '(14) 9982-8889', 'Vila Maria, 208', 'desenvolvimento@solutudo.com', '$2y$10$N80Y.9im32ZG643jV3piZeN4OXz24z92hU2FGlYhiy8GlE2y.0eVK', '19/11/2019', '', 'Gerente'),
 (33, 'John Doe', '(14) 9999-9999', 'Jardim Cristina, 202', 'johndoe@gmail.com', '$2y$10$CLbI61sSvCL6Nc06xf8ZC.mEZXw4lDcZjxsqe.FLg5QcMYQRtcA4G', '18/07/2020', '', 'Vendedor'),
 (34, 'Thais Fernandes', '(14) 9978-7677', 'Comerciários 3, 101', 'thaisfernandes@gmail.com', '$2y$10$r2eQONOP9WKtJMaTXysY8uaa/LNuQcR/ZbfIRxbbivRVufAQ.dzKK', '30/08/2020', '', 'Vendedor'),
 (35, 'Murilo Stanzione', '(14) 9997-4889', 'Vila Maria, 308', 'murilo@gmail.com', '$2y$10$VW9J7uu7A/eUQ5Qh8g1MbOJ9W4EcTAhFI6rkZPq07yfWDSRzl55YC', '20/03/2020', '', 'Vendedor'),
@@ -98,7 +98,7 @@ CREATE TABLE `planos` (
 --
 
 INSERT INTO `planos` (`id`, `planos`, `valor`) VALUES
-(2, 'Plano Prata', 'R$ 650,00'),
+(2, 'Plano Prata', 'R$ 600,00'),
 (3, 'Plano Ouro', 'R$ 900,00'),
 (4, 'Plano Platina', 'R$ 1200,00'),
 (5, 'Plano Bronze', 'R$ 450,00'),
@@ -130,7 +130,14 @@ INSERT INTO `vendas` (`id`, `empresa`, `vendedor`, `plano`, `valor`, `status`, `
 (35, 'Google+', 'Gabriel Valin', 'Plano Diamante', 'R$ 1.500,00', 'Em Processo', '19/11/2020'),
 (36, 'Super Mercado BOA COMPRA', 'Thais Fernandes', 'Plano Platina', 'R$ 1200,00', 'Em Processo', '19/11/2020'),
 (37, 'Google+', 'Thais Fernandes', 'Plano Diamante', 'R$ 1.500,00', 'Aprovado', '20/11/2020'),
-(38, 'Ale Combustíveis', 'Beatriz Costa', 'Plano Platina', 'R$ 1200,00', 'Negado', '10/11/2020');
+(38, 'Ale Combustíveis', 'Beatriz Costa', 'Plano Platina', 'R$ 1200,00', 'Negado', '10/11/2020'),
+(39, 'Facebook', 'Thais Fernandes', 'Plano Prata', 'R$ 1200,00', 'Aprovado', '23/11/2020'),
+(40, 'Facebook', 'Thais Fernandes', 'Plano Prata', 'R$ 1200,00', 'Aprovado', '23/11/2020'),
+(41, 'Facebook', 'Thais Fernandes', 'Plano Prata', 'R$ 1200,00', 'Aprovado', '23/11/2020'),
+(42, 'Facebook', 'Thais Fernandes', 'Plano Prata', 'R$ 1200,00', 'Aprovado', '23/11/2020'),
+(43, 'Facebook', 'Thais Fernandes', 'Plano Prata', 'R$ 1200,00', 'Aprovado', '23/11/2020'),
+(44, 'Google+', 'Thais Fernandes', 'Plano Platina', 'R$ 650,00', 'Negado', '11/11/2020'),
+(45, 'Google+', 'Thais Fernandes', 'Plano Platina', 'R$ 650,00', 'Negado', '11/11/2020');
 
 --
 -- Índices para tabelas despejadas
@@ -186,7 +193,7 @@ ALTER TABLE `planos`
 -- AUTO_INCREMENT de tabela `vendas`
 --
 ALTER TABLE `vendas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
